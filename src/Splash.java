@@ -37,7 +37,7 @@ public class Splash extends JFrame {
 		getContentPane().add(percent);
 		getContentPane().add(barra);
 		
-		// Thread, quando preciso carrega mais de dois processo ao mesmo tempo
+		// Thread, to load two process on the screen at the same time
 		new Thread(new carregar() ).start();
 		
 		
@@ -48,16 +48,16 @@ public class Splash extends JFrame {
 	
 	public class carregar implements Runnable{
 
-		// metodo para percorrer a barra de progresso 
 		@Override
+		// run: is the method to run in the progress bar 
 		public void run() {
 			
-			//metodo para percorrer  a barra de progresso
+			
 			for (int i = 0; i <= 100; i++) {
-				// se a barra não inicializar 
+				 
 				
 				try {
-					// metodo sleep em milisegundos o tempo de vida da thread
+					// sleep method, this is the life time of th Thread
 					Thread.sleep(100);
 					
 					barra.setValue(i);
@@ -94,7 +94,7 @@ public class Splash extends JFrame {
 			
 			
 			ComboBox combo = new ComboBox();
-			Splash.this.dispose(); //fechar a tela de splash
+			Splash.this.dispose(); //close splash screen
 			combo.setVisible(true);
 			
 		}
