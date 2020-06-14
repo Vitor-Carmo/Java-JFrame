@@ -1,6 +1,6 @@
 
 <h1 align=center>
-    ☕️ Java-JFrame
+    ☕️  Java-JFrame
 </h1>
 
 |TelaLogin.java|Splash.java| ComboBox.java|
@@ -9,7 +9,11 @@
 
 
 ## What I've learned
-[x] Swing
-[x] Splash JProgressBar
-[x] Combo box
-[x] Thread
+* Swing
+* Splash JProgressBar
+* Combo box
+* Thread
+
+___
+
+<br><br>
